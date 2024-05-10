@@ -24,12 +24,17 @@ export default function Hero() {
           Hey there! 👋 I&apos;m Suhail. <br />
           <br /> I work in tech, from web to mobile to blockchain and everything
           in between. Currently, I&apos;m DevRel at{" "}
-          <Link href={"https://livepeer.studio"} className="text-green-600">
+          <Link
+            href={"https://livepeer.studio"}
+            target="_blank"
+            className="text-green-600"
+          >
             Livepeer Inc.
           </Link>{" "}
           and working on building a decentralized social media platform called{" "}
           <Link
             href={"https://twitter.com/onboard_hq"}
+            target="_blank"
             className="text-orange-600"
           >
             Onboard
@@ -39,6 +44,7 @@ export default function Hero() {
           I&apos;m very active on{" "}
           <Link
             href={"https://twitter.com/suhailkakar"}
+            target="_blank"
             className="text-sky-600"
           >
             Twitter

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function Navbar() {
@@ -5,9 +6,19 @@ export default function Navbar() {
     <header>
       <nav className="relative mx-auto max-w-xl">
         <ul className="flex items-center space-x-6 text-base text-slate-400 cursor-pointer">
-          <li>Home</li>
-          <li>Twitter</li>
-          <li>GitHub</li>
+          <li>
+            <Link href="/">Home</Link>
+          </li>
+          <li>
+            <Link href="https://twitter.com/suhailkakar" target="_blank">
+              Twitter
+            </Link>
+          </li>
+          <li>
+            <Link target="_blank" href="https://github.com/suhailkakar">
+              GitHub
+            </Link>
+          </li>
         </ul>
       </nav>
     </header>
