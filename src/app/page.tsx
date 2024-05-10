@@ -4,6 +4,7 @@ import PostTile from "@/components/post-tile";
 import { HASHNODE_API, HOST } from "@/constants";
 import { GET_POST } from "@/lib/gql";
 import { type PostExcerpt } from "@/lib/types";
+import { cn } from "@/lib/utils";
 import Link from "next/link";
 
 async function getPosts(
@@ -31,7 +32,7 @@ export default async function Home() {
 
   return (
     <main className="min-h-screen relative">
-      <div className="py-12 pb-0 px-4 sm:px-6 lg:pl-52">
+      <div className="py-8 md:py-12 pb-0 px-4 sm:px-6 lg:pl-52">
         <Navbar />
       </div>
       <Hero />

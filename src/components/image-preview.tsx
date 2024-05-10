@@ -4,13 +4,13 @@ export default function ImagePreview({ title }: { title: string }) {
   return (
     <div
       style={{
-        display: "flex",
         backgroundImage: "url(/og-bg.png)",
         backgroundSize: "contain",
         backgroundRepeat: "no-repeat",
         aspectRatio: "16 / 9",
         borderRadius: 20,
       }}
+      className="hidden md:flex"
     >
       <div
         style={{
