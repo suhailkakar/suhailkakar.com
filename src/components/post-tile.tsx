@@ -7,7 +7,7 @@ import ImagePreview from "./image-preview";
 
 export default function PostTile({ post }: { post: PostExcerpt }) {
   return (
-      <article className="md:flex">
+      <article className="md:flex cursor-pointer">
         <h2 className="content-date h-full mt-px">
           <a>{formatDate(post.publishedAt)}</a>
         </h2>
