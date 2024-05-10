@@ -5,7 +5,6 @@ export default function robots() {
         userAgent: '*',
       },
     ],
-    sitemap: 'https://suhailkakar.com/sitemap.xml',
     host: 'https://suhailkakar.com',
   };
 }
