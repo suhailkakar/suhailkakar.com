@@ -38,6 +38,17 @@ query Publication($slug: String!) {
       }
       publishedAt
       readTimeInMinutes
+      features {
+        tableOfContents {
+          items {
+            id
+            level
+            slug
+            title
+            parentId
+          }
+        }
+      }
     }
   }
 }

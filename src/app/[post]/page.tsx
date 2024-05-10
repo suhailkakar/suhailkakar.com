@@ -1,10 +1,10 @@
 import Badge from "@/components/badge";
 import ImagePreview from "@/components/image-preview";
+import TableOfContent from "@/components/toc";
 import { HASHNODE_API } from "@/constants";
 import formatDate from "@/lib/format-date";
 import { GET_POST_BY_SLUG } from "@/lib/gql";
 import { Tag, Post } from "@/lib/types";
-import Image from "next/image";
 import React from "react";
 
 async function getPost(postSlug: string): Promise<Post> {
@@ -54,6 +54,9 @@ export default async function Page({ params }: { params: { post: string } }) {
           ></div>
         </article>
       </section>
+      <div className="top-60 left-20 h-full w-full fixed">
+       <TableOfContent items={post.features.tableOfContents.items} />
+      </div>
     </main>
   );
 }

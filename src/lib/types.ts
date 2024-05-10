@@ -16,6 +16,17 @@ export type Post = {
   tags: Tag[];
   publishedAt: string;
   readTimeInMinutes: number;
+  features: {
+    tableOfContents: {
+      items: {
+        id: string;
+        level: number;
+        slug: string;
+        title: string;
+        parentId: string;
+      }[];
+    };
+  };
 };
 
 export type Tag = {
