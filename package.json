@@ -9,8 +9,8 @@
     "lint": "next lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "format-check": "prettier --check \"**/*.{ts,tsx,md}\"",
-    "generate-sitemap": "node generate-sitemap.mjs",
-    "postinstall": "node generate-sitemap.mjs"
+    "generate-sitemap": "node scripts/generate-sitemap.mjs",
+    "postinstall": "node scripts/generate-sitemap.mjs"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.10",
