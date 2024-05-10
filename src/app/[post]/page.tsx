@@ -1,4 +1,5 @@
 import Badge from "@/components/badge";
+import ImagePreview from "@/components/image-preview";
 import { HASHNODE_API } from "@/constants";
 import formatDate from "@/lib/format-date";
 import { GET_POST_BY_SLUG } from "@/lib/gql";
@@ -42,14 +43,8 @@ export default async function Page({ params }: { params: { post: string } }) {
             className={"absolute -top-6 right-0 md:static mb-2 mr-4"}
           />
         ))}
-        <div className="relative">
-          <Image
-            src={"https://suhailkakar-com.vercel.app/og?title=" + post.title}
-            alt={post.title}
-            height={1200}
-            width={630}
-            className={"object-cover rounded-2xl w-full my-4"}
-          />
+        <div className="relative my-2">
+        <ImagePreview title={post.title} />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent  to-[#ffffff90] rounded-2xl" />
         </div>
         <article className="text-sm leading-7 text-slate-500 prose max-w-none my-4">
