@@ -31,7 +31,7 @@ export async function generateMetadata({
       description : post.brief,
       type: 'article',
       publishedTime: post.publishedAt,
-      url: `https://suhailkakar.com/${post.slug}`,
+      url: `https://suhailkakar.com/${params.post}`,
       images: [
         {
           url: ogImage,
