@@ -1,10 +1,12 @@
+import { BASE_URL } from "@/constants";
+
 export default function robots() {
   return {
     rules: [
       {
-        userAgent: '*',
+        userAgent: "*",
       },
     ],
-    host: 'https://suhailkakar.com',
+    host: BASE_URL,
   };
 }

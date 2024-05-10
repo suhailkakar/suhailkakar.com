@@ -1,15 +1,11 @@
-import React from 'react'
+import React from "react";
 
-export default function ImagePreview({
-  title
-}:{
-  title: string
-}) {
+export default function ImagePreview({ title }: { title: string }) {
   return (
     <div
       style={{
         display: "flex",
-        backgroundImage: "url(https://suhailkakar-com.vercel.app/og-bg.png)",
+        backgroundImage: "url(/og-bg.png)",
         backgroundSize: "contain",
         backgroundRepeat: "no-repeat",
         aspectRatio: "16 / 9",
@@ -31,5 +27,5 @@ export default function ImagePreview({
         {title}
       </div>
     </div>
-  )
+  );
 }

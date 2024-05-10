@@ -2,7 +2,7 @@ import Badge from "@/components/badge";
 import ImagePreview from "@/components/image-preview";
 import Navbar from "@/components/nav";
 import TableOfContent from "@/components/toc";
-import { HASHNODE_API } from "@/constants";
+import { BASE_URL, HASHNODE_API, IMAGE, NAME } from "@/constants";
 import formatDate from "@/lib/format-date";
 import { GET_POST_BY_SLUG } from "@/lib/gql";
 import { type Tag, type Post } from "@/lib/types";
@@ -30,7 +30,7 @@ export async function generateMetadata({
       description: post.brief,
       type: "article",
       publishedTime: post.publishedAt,
-      url: `https://suhailkakar.com/${params.post}`,
+      url: `${BASE_URL}/${params.post}`,
       images: [
         {
           url: ogImage,
@@ -82,10 +82,10 @@ export default async function Page({ params }: { params: { post: string } }) {
               dateModified: post.publishedAt,
               description: post.brief,
               image: `https://suhailkakar-com.vercel.app/og?title=${post.title}`,
-              url: `https://suhailkakar.com/${postSlug}`,
+              url: `${BASE_URL}/${postSlug}`,
               author: {
                 "@type": "Person",
-                name: "Suhail Kakar",
+                name: NAME,
               },
             }),
           }}
@@ -93,8 +93,8 @@ export default async function Page({ params }: { params: { post: string } }) {
         <section className="relative mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 overflow-hidden">
           <div className="items-center flex justify-between mb-6">
             <Image
-              src="/suhail.png"
-              alt="suhail kakar"
+              src={IMAGE}
+              alt={NAME}
               className="h-12 w-12 rounded-full"
               height={100}
               width={100}

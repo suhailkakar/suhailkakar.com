@@ -5,7 +5,7 @@ query Publication {
   publication(host: "${HOST}") {
     isTeam
     title
-    posts(first: 10) {
+    posts(first: 20) {
       edges {
         node {
           id

@@ -1,5 +1,5 @@
+import { DESCRIPTION, IMAGE, NAME, TWITTER } from "@/constants";
 import Image from "next/image";
-import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -7,50 +7,18 @@ export default function Hero() {
       <div className="relative mx-auto max-w-xl   pb-20">
         <div className="flex items-center space-x-3">
           <Image
-            src="/suhail.png"
-            alt="suhail kakar"
+            src={IMAGE}
+            alt={NAME}
             className="h-20 w-20 rounded-full"
             height={100}
             width={100}
           />
           <div className="flex flex-col items-start">
-            <h1 className="text-2xl font-semibold  text-slate-700">
-              suhail kakar
-            </h1>
-            <p className=" text-base  text-slate-400">@suhailkakar</p>
+            <h1 className="text-2xl font-semibold  text-slate-700">{NAME}</h1>
+            <p className=" text-base  text-slate-400">@{TWITTER}</p>
           </div>
         </div>
-        <p className="mt-4 text-base leading-7 text-slate-600">
-          Hey there! 👋 I&apos;m Suhail. <br />
-          <br /> I work in tech, from web to mobile to blockchain and everything
-          in between. Currently, I&apos;m DevRel at{" "}
-          <Link
-            href={"https://livepeer.studio"}
-            target="_blank"
-            className="text-green-600"
-          >
-            Livepeer Inc.
-          </Link>{" "}
-          and working on building a decentralized social media platform called{" "}
-          <Link
-            href={"https://twitter.com/onboard_hq"}
-            target="_blank"
-            className="text-orange-600"
-          >
-            Onboard
-          </Link>{" "}
-          .
-          <br /> <br />
-          I&apos;m very active on{" "}
-          <Link
-            href={"https://twitter.com/suhailkakar"}
-            target="_blank"
-            className="text-sky-600"
-          >
-            Twitter
-          </Link>
-          . Don&apos;t be shy, say hi
-        </p>
+        <p className="mt-4 text-base leading-7 text-slate-600">{DESCRIPTION}</p>
       </div>
     </div>
   );

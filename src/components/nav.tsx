@@ -1,3 +1,4 @@
+import { GITHUB, TWITTER } from "@/constants";
 import Link from "next/link";
 import React from "react";
 
@@ -10,12 +11,12 @@ export default function Navbar() {
             <Link href="/">Home</Link>
           </li>
           <li>
-            <Link href="https://twitter.com/suhailkakar" target="_blank">
+            <Link target="_blank" href={`https://twitter.com/${TWITTER}`}>
               Twitter
             </Link>
           </li>
           <li>
-            <Link target="_blank" href="https://github.com/suhailkakar">
+            <Link target="_blank" href={`https://github.com/${GITHUB}`}>
               GitHub
             </Link>
           </li>
@@ -24,20 +25,3 @@ export default function Navbar() {
     </header>
   );
 }
-
-export const Arrow = () => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="20"
-    height="20"
-    viewBox="0 0 24 24"
-    fill="none"
-    className="h-5 w-5  stroke-slate-400"
-    stroke-width="1.5"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-  >
-    <path d="M7 7h10v10" />
-    <path d="M7 17 17 7" />
-  </svg>
-);
