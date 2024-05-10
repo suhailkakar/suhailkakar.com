@@ -44,7 +44,7 @@ export default async function Page({ params }: { params: { post: string } }) {
         ))}
         <div className="relative">
           <Image
-            src={"http://localhost:3000/og?title=" + post.title}
+            src={"https://suhailkakar-com.vercel.app/og?title=" + post.title}
             alt={post.title}
             height={1200}
             width={630}

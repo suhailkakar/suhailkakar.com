@@ -21,7 +21,7 @@ export async function GET(req: NextRequest) {
           height: "100%",
           width: "100%",
           display: "flex",
-          backgroundImage: "url(http://localhost:3000/og-bg.png)",
+          backgroundImage: "url(https://suhailkakar-com.vercel.app/og-bg.png)",
         }}
       >
         <div

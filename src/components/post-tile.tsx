@@ -28,7 +28,7 @@ export default function PostTile({ post }: { post: PostExcerpt }) {
           </article>
           <div className="mt-4 relative">
             <Image
-              src={"http://localhost:3000/og?title=" + post.title}
+              src={"https://suhailkakar-com.vercel.app/og?title=" + post.title}
               alt={post.title}
               height={1200}
               width={630}
