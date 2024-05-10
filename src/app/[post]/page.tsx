@@ -4,7 +4,7 @@ import TableOfContent from "@/components/toc";
 import { HASHNODE_API } from "@/constants";
 import formatDate from "@/lib/format-date";
 import { GET_POST_BY_SLUG } from "@/lib/gql";
-import { Tag, Post } from "@/lib/types";
+import { type Tag, type Post } from "@/lib/types";
 import React from "react";
 
 async function getPost(postSlug: string): Promise<Post> {

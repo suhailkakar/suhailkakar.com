@@ -18,17 +18,19 @@ export type Post = {
   readTimeInMinutes: number;
   features: {
     tableOfContents: {
-      items: {
-        id: string;
-        level: number;
-        slug: string;
-        title: string;
-        parentId: string;
-      }[];
+      items: TableOfContent[];
     };
   };
 };
 
 export type Tag = {
   name: string;
+};
+
+export type TableOfContent = {
+    id: string;
+    level: number;
+    slug: string;
+    title: string;
+    parentId: string;
 };

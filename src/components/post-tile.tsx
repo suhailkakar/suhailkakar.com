@@ -1,8 +1,7 @@
 import Badge from "@/components/badge";
 import formatDate from "@/lib/format-date";
 import truncate from "@/lib/truncate";
-import { PostExcerpt, Tag } from "@/lib/types";
-import Image from "next/image";
+import { type PostExcerpt, type Tag } from "@/lib/types";
 import ImagePreview from "./image-preview";
 
 export default function PostTile({ post }: { post: PostExcerpt }) {

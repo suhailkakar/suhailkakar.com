@@ -1,7 +1,8 @@
+import { type TableOfContent } from '@/lib/types';
 import Link from 'next/link';
 import React from 'react';
 
-export default function TableOfContent({ items }: { items: { id: string; level: number; slug: string; title: string; parentId: string; }[] }) {
+export default function TableOfContent({ items }: { items: TableOfContent[] }) {
 
   return (
     <div className='text-sm leading-7 text-slate-500 prose'>

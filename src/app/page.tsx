@@ -2,7 +2,7 @@ import Hero from "@/components/hero";
 import PostTile from "@/components/post-tile";
 import { HASHNODE_API } from "@/constants";
 import { GET_POST } from "@/lib/gql";
-import { PostExcerpt } from "@/lib/types";
+import { type PostExcerpt } from "@/lib/types";
 import Link from "next/link";
 
 async function getPosts(): Promise<PostExcerpt[]> {
