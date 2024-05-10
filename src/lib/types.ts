@@ -15,6 +15,7 @@ export type Post = {
   };
   tags: Tag[];
   publishedAt: string;
+  brief: string;
   readTimeInMinutes: number;
   features: {
     tableOfContents: {

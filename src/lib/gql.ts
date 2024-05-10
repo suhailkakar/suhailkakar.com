@@ -37,6 +37,7 @@ query Publication($slug: String!) {
         name
       }
       publishedAt
+      brief
       readTimeInMinutes
       features {
         tableOfContents {

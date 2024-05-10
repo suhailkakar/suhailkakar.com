@@ -8,7 +8,7 @@ export default function PostTile({ post }: { post: PostExcerpt }) {
   return (
       <article className="md:flex cursor-pointer">
         <h2 className="content-date h-full mt-px">
-          <a>{formatDate(post.publishedAt)}</a>
+          <p>{formatDate(post.publishedAt)}</p>
         </h2>
         <div className="content-block pb-20">
           <div className="feed-border"></div>
