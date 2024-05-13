@@ -13,7 +13,7 @@ const DESCRIPTION = (
   <>
     Hey there! 👋 I&apos;m Suhail. <br />
     <br /> I work in tech, from web to mobile to blockchain and everything in
-    between. Currently, I&apos;m in a engineering role at{" "}
+    between. Currently, i work in{" "}
     <Link
       href={"https://livepeer.studio"}
       target="_blank"
@@ -21,7 +21,7 @@ const DESCRIPTION = (
     >
       Livepeer Inc.
     </Link>{" "}
-    and building a decentralized social media platform;{" "}
+    and i&apos;m also building a decentralized social media platform;{" "}
     <Link
       href={"https://twitter.com/onboard_hq"}
       target="_blank"
