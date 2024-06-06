@@ -57,6 +57,9 @@ async function getPost(postSlug: string): Promise<Post> {
       query: GET_POST_BY_SLUG,
       variables: { slug: postSlug },
     }),
+    next: {
+      revalidate: 1,
+    },
   });
 
   const { data } = await res.json();
