@@ -52,7 +52,6 @@ async function getPost(postSlug: string): Promise<Post> {
     headers: {
       "Content-Type": "application/json",
     },
-    cache: "no-store",
     body: JSON.stringify({
       query: GET_POST_BY_SLUG,
       variables: { slug: postSlug },
