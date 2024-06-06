@@ -15,7 +15,7 @@ async function getPosts(
     headers: {
       "Content-Type": "application/json",
     },
-    cache: "no-cache",
+    cache: "no-store",
     body: JSON.stringify({ query: GET_POST }),
   });
 
