@@ -15,7 +15,7 @@ const DESCRIPTION = (
     <br /> I work in tech, from web to mobile to blockchain and everything in
     between. Currently, i work in{" "}
     <Link
-      href={"https://livepeer.studio"}
+      href={"https://livepeer.org"}
       target="_blank"
       className="text-green-600"
     >
@@ -23,11 +23,11 @@ const DESCRIPTION = (
     </Link>{" "}
     and i&apos;m also building a decentralized social media platform;{" "}
     <Link
-      href={"https://twitter.com/onboard_hq"}
+      href={"https://twitter.com/literis_io"}
       target="_blank"
       className="text-orange-600"
     >
-      Onboard
+      Literis
     </Link>{" "}
     <br /> <br />
     I&apos;m very active on{" "}
