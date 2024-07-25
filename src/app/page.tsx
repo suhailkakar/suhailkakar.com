@@ -1,10 +1,9 @@
 import Hero from "@/components/hero";
 import Navbar from "@/components/nav";
 import PostTile from "@/components/post-tile";
-import { HASHNODE_API, HOST } from "@/constants";
+import { HASHNODE_API } from "@/constants";
 import { GET_POST } from "@/lib/gql";
 import { type PostExcerpt } from "@/lib/types";
-import { cn } from "@/lib/utils";
 import Link from "next/link";
 
 async function getPosts(
