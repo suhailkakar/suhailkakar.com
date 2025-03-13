@@ -13,15 +13,15 @@ const DESCRIPTION = (
   <>
     Hey there! 👋 I&apos;m Suhail. <br />
     <br /> I work in tech, from web to mobile to blockchain and everything in
-    between. Currently, i work in{" "}
+    between. Currently, i work at{" "}
     <Link
       href={"https://tac.build"}
       target="_blank"
       className="text-purple-500"
     >
-      tac
+      TAC
     </Link>{" "}
-    and we help developers to bring their evm applications to ton and access 950m+
+    and help developers to bring their evm applications to ton and access 950m+
     telegram users.
     <br /> <br />
     I&apos;m very active on{" "}
