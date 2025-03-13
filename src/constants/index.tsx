@@ -15,20 +15,14 @@ const DESCRIPTION = (
     <br /> I work in tech, from web to mobile to blockchain and everything in
     between. Currently, i work in{" "}
     <Link
-      href={"https://livepeer.org"}
+      href={"https://tac.build"}
       target="_blank"
-      className="text-green-600"
+      className="text-purple-500"
     >
-      Livepeer Inc.
+      tac
     </Link>{" "}
-    and i&apos;m also building a decentralized social media platform;{" "}
-    <Link
-      href={"https://twitter.com/literis_io"}
-      target="_blank"
-      className="text-orange-600"
-    >
-      Literis
-    </Link>{" "}
+    and we help developers to bring their evm applications to ton and access 950m+
+    telegram users.
     <br /> <br />
     I&apos;m very active on{" "}
     <Link
