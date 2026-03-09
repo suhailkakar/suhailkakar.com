@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Oooh_Baby } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
 const ooohBaby = Oooh_Baby({
@@ -74,6 +75,7 @@ export default function RootLayout({
         className={` ${ooohBaby.variable} font-sans antialiased`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );
