@@ -15,39 +15,56 @@ const siteUrl = "https://suhailkakar.com";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "suhail kakar",
-    template: "%s | suhail kakar",
+    default: "Suhail Kakar - Software Engineer",
+    template: "%s | Suhail Kakar",
   },
   description:
-    "i'm a software engineer and writer. i've spent the last few years building products in crypto, mostly focused on developer tools and infrastructure.",
+    "Software engineer exploring the intersection of crypto and AI. Building developer tools and infrastructure. Previously shipped apps used by millions.",
   keywords: [
-    "suhail kakar",
+    "Suhail Kakar",
     "software engineer",
     "developer",
     "crypto",
     "web3",
     "blockchain",
+    "ai",
+    "ai agents",
     "developer tools",
     "infrastructure",
-    "writer",
   ],
   authors: [{ name: "Suhail Kakar", url: siteUrl }],
   creator: "Suhail Kakar",
+  publisher: "Suhail Kakar",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
     url: siteUrl,
-    siteName: "suhail kakar",
-    title: "suhail kakar",
+    siteName: "Suhail Kakar",
+    title: "Suhail Kakar - Software Engineer",
     description:
-    "i'm a software engineer and writer. i've spent the last few years building products in crypto, mostly focused on developer tools and infrastructure.",
+      "Software engineer exploring the intersection of crypto and AI. Building developer tools and infrastructure.",
+    images: [
+      {
+        url: `${siteUrl}/og.png`,
+        width: 1200,
+        height: 630,
+        alt: "Suhail Kakar",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "suhail kakar",
+    title: "Suhail Kakar - Software Engineer",
     description:
-    "i'm a software engineer and writer. i've spent the last few years building products in crypto, mostly focused on developer tools and infrastructure.",
+      "Software engineer exploring the intersection of crypto and AI. Building developer tools and infrastructure.",
     creator: "@SuhailKakar",
+    site: "@SuhailKakar",
+    images: [`${siteUrl}/og.png`],
   },
   robots: {
     index: true,
@@ -63,6 +80,45 @@ export const metadata: Metadata = {
   alternates: {
     canonical: siteUrl,
   },
+  };
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": `${siteUrl}/#website`,
+      url: siteUrl,
+      name: "Suhail Kakar",
+      description: "Software engineer exploring the intersection of crypto and AI",
+      publisher: {
+        "@id": `${siteUrl}/#person`,
+      },
+    },
+    {
+      "@type": "Person",
+      "@id": `${siteUrl}/#person`,
+      name: "Suhail Kakar",
+      url: siteUrl,
+      image: `${siteUrl}/icon.png`,
+      description: "Software engineer exploring the intersection of crypto and AI. Building developer tools and infrastructure.",
+      jobTitle: "Software Engineer",
+      knowsAbout: ["Crypto", "AI", "Web3", "Blockchain", "Developer Tools", "Infrastructure"],
+      sameAs: [
+        "https://twitter.com/SuhailKakar",
+        "https://github.com/SuhailKakar",
+      ],
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": `${siteUrl}/#profilepage`,
+      url: siteUrl,
+      name: "Suhail Kakar",
+      mainEntity: {
+        "@id": `${siteUrl}/#person`,
+      },
+    },
+  ],
 };
 
 export default function RootLayout({
@@ -72,6 +128,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body
         className={` ${ooohBaby.variable} font-sans antialiased`}
       >
