@@ -33,12 +33,12 @@ export default function Home() {
     <main className="min-h-screen flex flex-col  justify-between max-w-6xl mx-auto px-6 py-12">
       <header className="md:mt-40">
         <HandwrittenName />
-        <p className="text-[var(--muted)] text-md text-center leading-relaxed max-w-lg">
+        <p className="text-[var(--muted)] text-md  leading-relaxed max-w-lg">
           i&apos;m a software engineer exploring the intersection of crypto and
           ai. i&apos;ve spent the last few years building products in crypto,
           mostly focused on developer tools and infrastructure.
         </p>
-        <p className="text-[var(--muted)] text-md text-center leading-relaxed max-w-lg mt-4">
+        <p className="text-[var(--muted)] text-md  leading-relaxed max-w-lg mt-4">
           before crypto, i worked across web and mobile, shipping apps used by
           millions of people. i care deeply about making complex technology
           accessible. when i&apos;m not coding, i write about what i&apos;m
