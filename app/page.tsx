@@ -6,10 +6,6 @@ const articles = [
     title: "vibe coding: a practical guide for literally everyone",
   },
   {
-    url: "https://x.com/SuhailKakar/status/1994409261682839835",
-    title: "how hyperliquid beat everyone by ignoring the rules",
-  },
-  {
     url: "https://x.com/SuhailKakar/status/1957708281423729055",
     title: "you are not dumb, crypto is hard",
   },
